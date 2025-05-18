@@ -43,23 +43,23 @@ bool disjointSet::isDisjoint(int x, int y)
 
 
 
-int main()
-{
-    cout << "checking if Disjoint\n";
-    disjointSet nodes(10);
-    // 1-2-5-6-7 3-8-9 4
-    nodes.unionSet(1, 2);
-    nodes.unionSet(2, 5);
-    nodes.unionSet(5, 6);
-    nodes.unionSet(6, 7);
-    nodes.unionSet(3, 8);
-    nodes.unionSet(8, 9);
-
-    cout << (nodes.isDisjoint(1, 5) ? "True" : "False") << endl;
-    cout << (nodes.isDisjoint(5, 7)? "True" : "False") << endl;  // true
-    cout <<( nodes.isDisjoint(4, 9)? "True" : "False") << endl;  // false
-    nodes.unionSet(9, 4);
-    cout << (nodes.isDisjoint(4, 9)? "True" : "False") << endl;  // true
-
-    return 0;
-}
+// int main()
+// {
+//     cout << "checking if Disjoint\n";
+//     disjointSet nodes(10);
+//     // 1-2-5-6-7 3-8-9 4
+//     nodes.unionSet(1, 2);
+//     nodes.unionSet(2, 5);
+//     nodes.unionSet(5, 6);
+//     nodes.unionSet(6, 7);
+//     nodes.unionSet(3, 8);
+//     nodes.unionSet(8, 9);
+//
+//     cout << (nodes.isDisjoint(1, 5) ? "True" : "False") << endl;
+//     cout << (nodes.isDisjoint(5, 7)? "True" : "False") << endl;  // true
+//     cout <<( nodes.isDisjoint(4, 9)? "True" : "False") << endl;  // false
+//     nodes.unionSet(9, 4);
+//     cout << (nodes.isDisjoint(4, 9)? "True" : "False") << endl;  // true
+//
+//     return 0;
+// }
